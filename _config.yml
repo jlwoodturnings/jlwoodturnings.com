@@ -26,7 +26,7 @@ social:
 
 # Build settings
 markdown: kramdown
-theme: spectral_jekyll_theme
+theme: strata_jekyll_theme
 plugins:
   - jekyll-feed
 
