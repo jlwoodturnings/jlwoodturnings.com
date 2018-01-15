@@ -4,6 +4,7 @@ module Jekyll
     class EnvironmentVariablesGenerator < Generator
         def generate(site)      
           site.config['google_id'] = ENV['GOOGLE_ANALYTICS_ID']
+          site.config['getform_token'] = ENV['GETFORM_TOKEN']
         end
     end
 end
