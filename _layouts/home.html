@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>  
+        <!-- HEAD -->
+        {% include head.html %}
+	<body>
+		{% if jekyll.environment == 'production' %}
+		{% include analytics.html %}
+		{% endif %}
+		<!-- Wrapper -->
+		<div id="wrapper" class="divided">
+
+			<!-- One BANNER-->
+			{% include banner.html %}
+
+			<!-- Two SPOTLIGHT-->
+			{% include spotlight.html %}
+
+			<!-- Five SLIDING GALLERY-->
+			{% include sliding_gallery.html %}	
+
+			<!-- Six GRID-->
+			{% include grid.html %}	
+
+			<!-- Seven CONTACT-->
+			{% include contact.html %}
+
+			<!-- Footer -->
+			{% include footer.html %}
+
+		</div>
+
+		<!-- Scripts -->
+        {% include scripts.html %}
+
+	</body>
+</html>
