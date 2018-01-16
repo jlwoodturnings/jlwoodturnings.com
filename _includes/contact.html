@@ -1,23 +1,36 @@
 <section class="wrapper style1 align-center">
         <div class="inner medium">
             <h2>Get in touch</h2>
-            <form method="post" action="https://www.getform.org/f/{{ site.getform_token }}">
+            <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/{{ site.gform_token }}/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
                 <div class="field half first">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" value="" />
+                    <label for="entry.1209188638">Name</label>
+                    <input type="text" name="entry.1209188638" id="entry.1209188638" value="" />
+                    <input type="text" name="_gotcha" style="display:none" />
                 </div>
                 <div class="field half">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" value="" />
+                    <label for="entry.1759441374">Email</label>
+                    <input type="email" name="entry.1759441374" id="entry.1759441374" value="" />
                 </div>
                 <div class="field">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" rows="6"></textarea>
+                    <label for="entry.1770832354">Message</label>
+                    <textarea name="entry.1770832354" id="entry.1770832354" rows="6"></textarea>
                 </div>
                 <ul class="actions">
                     <li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
                 </ul>
             </form>
-
         </div>
     </section>
+
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript">var submitted=false;</script>
+    <script type="text/javascript">
+    $('#gform').on('submit', function(e) {
+      $('#gform *').fadeOut(1000);
+      $('#gform').prepend('Thanks for reaching out, I will get back to you shortly..');
+      });
+    </script>
+            
+            
