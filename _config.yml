@@ -20,7 +20,7 @@ owner: Josh Lesch
 first_published: 2018
 email: jlwoodturnings@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://joshlesch.com" # the base hostname & protocol for your site, e.g. http://example.com
 social:
   instagram: https://www.instagram.com/leschj94/
 
